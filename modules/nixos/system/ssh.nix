@@ -15,10 +15,12 @@
     
     # Main settings.
     settings = {
+
       #X11Forwarding = true;
       # Root user is used for remote deployment, so we need to allow it.
       #PermitRootLogin = "prohibit-password";
       #PasswordAuthentication = false; # Disable password PermitRootLogin.
+
     };
 
     # Open Firewall for ssh.
