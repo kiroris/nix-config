@@ -1,0 +1,75 @@
+ignore-empty-password
+#font=Ubuntu Mono Nerd Font
+font=JetBrainsMono Nerd Font
+
+clock
+timestr=%R
+datestr=%a, %e of %B
+
+#screenshots
+image=~/.config/wallpapers/Lawson.jpg
+
+fade-in=0.5
+
+effect-blur=15x2
+#effect-greyscale
+#effect-scale=0.1
+
+no-unlock-indicator
+hide-keyboard-layout
+
+
+indicator
+indicator-radius=210
+indicator-thickness=20
+indicator-caps-lock
+
+
+#Separator color.
+separator-color=00000000
+
+# Key colors.
+key-hl-color=#880033ff
+bs-hl-color=ffffffff
+caps-lock-key-hl-color=ffd204FF
+caps-lock-bs-hl-color=dededeFF
+text-caps-lock-color=ffd204ff
+
+
+# Inside colors.
+inside-color=00000060
+# ffd20400
+inside-clear-color=00000060
+# 009ddc00
+inside-caps-lock-color=00000060
+# d9d8d800
+inside-ver-color=00000060
+# ee2e2400
+inside-wrong-color=00000060
+
+
+# Ring colors.
+ring-color=231f20D9
+ring-clear-color=231f20D9
+ring-caps-lock-color=231f20D9
+ring-ver-color=231f20D9
+ring-wrong-color=231f20D9
+
+
+# Line colors.
+line-color=00000000
+#009ddcFF
+line-clear-color=00000000
+#ffd204FF
+line-caps-lock-color=00000000
+#d9d8d8FF
+line-ver-color=00000000
+#ee2e24FF
+line-wrong-color=00000000
+
+
+# Text colors.
+text-color=dededeff
+text-clear-color=009ddcff
+text-ver-color=00000000ff
+text-wrong-color=ee2e24ff
