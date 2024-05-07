@@ -1,6 +1,3 @@
-# Base TUI Home Manager's Modules
+# Base Tui Home Manager's Modules
 
-- `btop.nix`: Base configuration for the `btop` terminal application.
-- `cava.nix`: Base configuration for the `cava` terminal application.
-- `default.nix`: Default configuration for the `tui` module.
-
+This directory contains basic [tui](https://www.google.com/search?q=tui+programming+abbreviation) modules suitable for both Linux and MacOS.
