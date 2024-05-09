@@ -7,19 +7,17 @@
 # ██║██║ ╚═╝ ██║██║     ╚██████╔╝██║  ██║   ██║   ███████║
 # ╚═╝╚═╝     ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝
 
-  imports = mylib.scanPaths ./.;
-
-  ## Создаем списки тем для импорта waybar и eww
-  #waybarThemes = [ "winter-vulcan" "тема2" "тема3" ];
-  #ewwThemes = [ "тема4" "тема5" "тема6" ];
-
-  ## Проверяем, нужно ли импортировать waybar или eww для данной темы
-  #themeImports = if theme.name in waybarThemes then [ ./waybar ]
-  #               else if theme.name in ewwThemes then [ ./eww ]
-  #               else [];
-  #               
-  ## Добавляем импорты в список импортов
-  #imports = imports ++ themeImports;
+  # Import the configurations for the selected theme.
+  imports = 
+    let
+      themeImports = 
+        if theme == "lawson" then [ ./foot ./rofi ./dunst ./swaylock ./waybar]
+        else [];
+    in
+      [
+        ./imv.nix
+        ./mpv.nix
+      ] ++ themeImports;
 
 #  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣿⣿⣿⡽⣣⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 #  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣳⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣿⣿⣿⣷⡻⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
