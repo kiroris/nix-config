@@ -12,6 +12,7 @@
 
     # Required programs.
     transmission
+    qutebrowser
     neofetch
     neovim
     git
