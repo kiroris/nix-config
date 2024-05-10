@@ -19,7 +19,6 @@
         (
           path: _type:
             (_type == "directory") # Include directories.
-            #&& (path != "waybar") && (path != "eww") # Ignore waybar and eww directories.
             || (
               (path != "default.nix") # Ignore default.nix
               && (lib.strings.hasSuffix ".nix" path) # Include .nix files
