@@ -11,7 +11,8 @@
   programs.foot.settings = {
 
     # Set font for foot.
-    main.font = "JetBrainsMono NF:style=medium:size=9.7"; # I used style=medium.
+    #main.font = "JetBrainsMono NF:style=medium:size=9"; # I used style=medium.
+    main.font = "Fira Code:style=Regular:size=10";
 
     # Customized cursor for each theme.
     cursor.color = "000000 babdb6";

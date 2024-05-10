@@ -32,7 +32,7 @@
       separator_color = "frame";
 
       # Set font for notifications.
-      font = "JetBrainsMono 10";
+      font = "Fira Code 10";
 
       # Set radius of corner.
       corner_radius = 7;

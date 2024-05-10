@@ -1,6 +1,7 @@
 ignore-empty-password
 #font=Ubuntu Mono Nerd Font
-font=JetBrainsMono Nerd Font
+#font=JetBrainsMono Nerd Font
+font=Fira Code
 
 clock
 timestr=%R

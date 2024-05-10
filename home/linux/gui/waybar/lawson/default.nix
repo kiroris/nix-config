@@ -66,7 +66,7 @@
             "8" = "八";
             "9" = "九";
             "10" = "十";
-            "urgent" = "";
+            "urgent" = "󱈸";
           };
 
         };
@@ -240,7 +240,7 @@
         "cpu" = {
 
           # Format settings.
-          format = "{usage}% ";
+          format = "{usage}% ";
 
           # Click settings.
           on-click = "footclient -H  btop";
@@ -327,7 +327,7 @@
       
       * {
         border: none;
-        font-family: 'JetBrainsMono', 'Symbols Nerd Font Mono';
+        font-family: 'JetBrains Mono', 'Symbols Nerd Font Mono';
         font-size: 16px;
         font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
         min-height: 25px;
