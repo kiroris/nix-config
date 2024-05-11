@@ -153,7 +153,7 @@
 
       # Actions with files.
       U = "unselect";
-      DD = "delete";
+      dd = "delete";
       mkd = "mkdir";
       mkf = "touch";
       r = "rename";

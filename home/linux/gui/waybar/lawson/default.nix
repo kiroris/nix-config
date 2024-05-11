@@ -92,9 +92,10 @@
           #format = "{player} ({status}) {dynamic}";
           format = "{player_icon} {dynamic}";
           player-icons = {
-            "default" = " ";
+            "default" = "";
             "spotify" = "";
             "firefox" = "";
+            "chromium"= "";
           };
 
           # Order settings.
