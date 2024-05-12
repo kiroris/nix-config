@@ -37,6 +37,7 @@
         co = "tab-only";
         gD = "tab-give";
         gC = "tab-clone";
+        gd = null; # download.
 
         d = null;
         D = "tab-close -o";
@@ -49,7 +50,7 @@
         # Macro.
         "@" = "macro-run";
         "!" = "macro-record";
-        q = null; # Macro-record.
+        q = null; # macro-record.
 
 
         # Reload.
@@ -65,6 +66,19 @@
         "?" = "cmd-set-text ?";
         "." = "cmd-repeat-last";
 
+
+        # Download.
+        "dp" = "download";
+        "dc" = "download-clear";
+        "da" = "download-cancel";
+
+
+        # Exit.
+        "ZZ" = "quit --save";
+        "<Shift-Q>" = "close";
+        "<Ctrl-Q>" = null; # quit.
+        "<Ctrl-Shift-Q>" = "quit";
+
   
         # Open window.
         "<Ctrl-N>" = "open -w";
@@ -73,8 +87,8 @@
 
         # Open tab.
         O = "cmd-set-text -s :open -t";
-        go = null; # cmd-set-text :open {url:pretty}
-        gO = null; # cmd-set-text :open -t -r {url:pretty}
+        go = null; # cmd-set-text :open {url:pretty}.
+        gO = null; # cmd-set-text :open -t -r {url:pretty}.
 
 
         # Scroll.
@@ -87,8 +101,8 @@
 
 
         # Tab focus.
-        gm = null; #tab-move
-        g0 = null; # tab-focus 1
+        gm = null; # tab-move.
+        g0 = null; # tab-focus 1.
         "<Alt-1>" = "tab-focus 1";
         "<Alt-2>" = "tab-focus 2";
         "<Alt-3>" = "tab-focus 3";
@@ -98,7 +112,7 @@
         "<Alt-7>" = "tab-focus 7";
         "<Alt-8>" = "tab-focus 8";
         "<Alt-9>" = "tab-focus -1";
-        "g$" = null; # tab-focus -1
+        "g$" = null; # tab-focus -1.
 
         gK = null; # tab-move -
         "<Ctrl-PgUp>" = "tab-prev";
@@ -108,7 +122,7 @@
 
         "<Ctrl-Tab>" = "tab-focus last";
         T = "cmd-set-text -sr :tab-focus";
-        gt = null; # cmd-set-text -s :tab-select
+        gt = null; # cmd-set-text -s :tab-select.
 
 
         # Quickmarks.
@@ -137,7 +151,7 @@
 
         ";t" = "hint inputs";
         I = "hint inputs --first";
-        gi = null; #hint inputs --first
+        gi = null; # hint inputs --first.
 
         ";Y" = "hint links yank-primary";
         ";y" = "hint links yank";
@@ -147,9 +161,6 @@
 
         ";O" = "hint links fill :open -t -r {hint-url}";
         ";o" = "hint links fill :open {hint-url}";
-
-
-
 
 
 
@@ -174,14 +185,12 @@
 
 
         "<Ctrl-Return>" = "selection-follow -t";
-        "<Ctrl-Shift-Q>" = "quit";
         "<Ctrl-Shift-T>" = "undo";
         "<Ctrl-V>" = "mode-enter passthrough";
         "<Ctrl-X>" = "navigate decrement";
         "<Escape>" = "clear-keychain ;; search ;; fullscreen --leave";
         "<F11>" = "fullscreen";
         "<Return>" = "selection-follow";
-        "<Shift-Q>" = "close";
         "<back>" = "back";
         "<forward>" = "forward";
         "H" = "back";
@@ -194,22 +203,17 @@
         "Ss" = "set";
         "U" = "undo -w";
         "V" = "mode-enter caret ;; selection-toggle --line";
-        "ZZ" = "quit --save";
         "[[" = "navigate prev";
         "]]" = "navigate next";
-        "da" = "download-cancel";
-        "dc" = "download-clear";
-        "dp" = "download";
+
 
         "gU" = "navigate up -t";
         "gf" = "view-source"; #LAAAAAAAST
 
-        "<Ctrl-Q>" = null; # Quit
         "<Ctrl-Shift-W>" = null; # CLose tub
         "<Ctrl-s>" = null; # Stop
         "<Ctrl-Shift-W>" = null; # Close
 
-        "gd" = null; # download
 
       };
 
