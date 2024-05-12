@@ -22,21 +22,41 @@
 
       normal = {
 
+        # Zoom.
+        "+" = "zoom";
+        "=" = "zoom-in";
+        "-" = "zoom-out";
+
+
         # Main pages.
         "<Ctrl-H>" = "home";
         "<Ctrl-T>" = "open -t";
 
 
+        # Tabs. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        co = "tab-only";
+        gD = "tab-give";
+        gC = "tab-clone";
+
+        d = null;
+        D = "tab-close -o";
+
+        "<Alt-m>" = "tab-mute";
+        "<Ctrl-p>" = "tab-pin";
+        "<Ctrl-W>" = "tab-close";
+
+
         # Macro.
         "@" = "macro-run";
         "!" = "macro-record";
-        "q" = null; # Macro-record.
+        q = null; # Macro-record.
 
 
-        # Zoom.
-        "+" = "zoom";
-        "=" = "zoom-in";
-        "-" = "zoom-out";
+        # Reload.
+        r = "reload";
+        R = "reload -f";
+        "<F5>" = "reload";
+        "<Ctrl-F5>" ="reload -f";
 
 
         # Commands.
@@ -52,9 +72,9 @@
 
 
         # Open tab.
-        "O" = "cmd-set-text -s :open -t";
-        "go" = null; # cmd-set-text :open {url:pretty}
-        "gO" = null; # cmd-set-text :open -t -r {url:pretty}
+        O = "cmd-set-text -s :open -t";
+        go = null; # cmd-set-text :open {url:pretty}
+        gO = null; # cmd-set-text :open -t -r {url:pretty}
 
 
         # Scroll.
@@ -64,19 +84,6 @@
         "<Ctrl-B>" = "scroll-page 0 -1";
         "<Ctrl-D>" = "scroll-page 0 0.5";
         "<Ctrl-U>" = "scroll-page 0 -0.5";
-
-
-        # Tabs.
-        co = "tab-only";
-        gD = "tab-give";
-        gC = "tab-clone";
-
-        d = null;
-        D = "tab-close -o";
-
-        "<Alt-m>" = "tab-mute";
-        "<Ctrl-p>" = "tab-pin";
-        "<Ctrl-W>" = "tab-close";
 
 
         # Tab focus.
@@ -102,7 +109,6 @@
         "<Ctrl-Tab>" = "tab-focus last";
         T = "cmd-set-text -sr :tab-focus";
         gt = null; # cmd-set-text -s :tab-select
-
 
 
         # Quickmarks.
@@ -150,6 +156,7 @@
 
 
 
+
         "PP" = "open -t -- {primary}";
         "Pp" = "open -t -- {clipboard}";
 
@@ -165,7 +172,6 @@
         "<Ctrl-A>" = "navigate increment";
         "<Ctrl-Alt-p>" = "print";
 
-        "<Ctrl-F5>" = "reload -f";
 
         "<Ctrl-Return>" = "selection-follow -t";
         "<Ctrl-Shift-Q>" = "quit";
@@ -174,7 +180,6 @@
         "<Ctrl-X>" = "navigate decrement";
         "<Escape>" = "clear-keychain ;; search ;; fullscreen --leave";
         "<F11>" = "fullscreen";
-        "<F5>" = "reload";
         "<Return>" = "selection-follow";
         "<Shift-Q>" = "close";
         "<back>" = "back";
@@ -185,7 +190,6 @@
         "L" = "forward";
         "N" = "search-prev";
 
-        "R" = "reload -f";
         "Sh" = "history";
         "Ss" = "set";
         "U" = "undo -w";
@@ -198,7 +202,7 @@
         "dp" = "download";
 
         "gU" = "navigate up -t";
-        "gf" = "view-source";
+        "gf" = "view-source"; #LAAAAAAAST
 
         "<Ctrl-Q>" = null; # Quit
         "<Ctrl-Shift-W>" = null; # CLose tub
