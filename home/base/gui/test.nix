@@ -39,6 +39,14 @@
         "?" = "cmd-set-text ?";
         "." = "cmd-repeat-last";
 
+        # Scroll.
+        G = "scroll-to-perc";
+        gg = "scroll-to-perc 0";
+        "<Ctrl-F>" = "scroll-page 0 1";
+        "<Ctrl-B>" = "scroll-page 0 -1";
+        "<Ctrl-D>" = "scroll-page 0 0.5";
+        "<Ctrl-U>" = "scroll-page 0 -0.5";
+
 
         # Tabs.
         "<Alt-1>" = "tab-focus 1";
@@ -51,12 +59,24 @@
         "<Alt-8>" = "tab-focus 8";
         "<Alt-9>" = "tab-focus -1";
         "<Ctrl-Tab>" = "tab-focus last";
-        "T" = "cmd-set-text -sr :tab-focus";
+        T = "cmd-set-text -sr :tab-focus";
+
+
+        # Quickmarks.
+        am = "quickmark-save";
+        m = "cmd-set-text -s :quickmark-load";
+        M = "cmd-set-text -s :quickmark-load -t";
+
+
+        # Bookmarks.
+        ab = "bookmark-add";
+        b = "cmd-set-text -s :bookmark-load";
+        B = "cmd-set-text -s :bookmark-load -t";
 
 
         # Hints.
-        "F" = "hint all tab";
-        "f" = "hint";
+        F = "hint all tab";
+        f = "hint";
 
         ";I" = "hint images tab";
         ";i" = "hint images";
@@ -67,8 +87,8 @@
         ";d" = "hint links download";
 
         ";t" = "hint inputs";
-        "I" = "hint inputs --first";
-        "gi" = null; #hint inputs --first
+        I = "hint inputs --first";
+        gi = null; #hint inputs --first
 
         ";Y" = "hint links yank-primary";
         ";y" = "hint links yank";
@@ -87,18 +107,19 @@
 
 
 
-
         "'" = "mode-enter jump_mark";
+        "sm" = "mode-enter set_mark";
 
+
+        "Sb" = "bookmark-list --jump";
+        "Sq" = "bookmark-list";
 
 
         "<Alt-m>" = "tab-mute";
         "<Ctrl-A>" = "navigate increment";
         "<Ctrl-Alt-p>" = "print";
-        "<Ctrl-B>" = "scroll-page 0 -1";
-        "<Ctrl-D>" = "scroll-page 0 0.5";
+
         "<Ctrl-F5>" = "reload -f";
-        "<Ctrl-F>" = "scroll-page 0 1";
         "<Ctrl-H>" = "home";
         "<Ctrl-N>" = "open -w";
         "<Ctrl-PgDown>" = "tab-next";
@@ -108,7 +129,6 @@
         "<Ctrl-Shift-Q>" = "quit";
         "<Ctrl-Shift-T>" = "undo";
         "<Ctrl-T>" = "open -t";
-        "<Ctrl-U>" = "scroll-page 0 -0.5";
         "<Ctrl-V>" = "mode-enter passthrough";
         "<Ctrl-W>" = "tab-close";
         "<Ctrl-X>" = "navigate decrement";
@@ -120,41 +140,31 @@
         "<Shift-Q>" = "close";
         "<back>" = "back";
         "<forward>" = "forward";
-        "B" = "cmd-set-text -s :quickmark-load -t";
         "D" = "tab-close -o";
-        "G" = "scroll-to-perc";
         "H" = "back";
         "J" = "tab-prev";
         "K" = "tab-next";
         "L" = "forward";
-        "M" = "bookmark-add";
         "N" = "search-prev";
         "O" = "cmd-set-text -s :open -t";
         "PP" = "open -t -- {primary}";
         "Pp" = "open -t -- {clipboard}";
         "R" = "reload -f";
-        "Sb" = "bookmark-list --jump";
         "Sh" = "history";
-        "Sq" = "bookmark-list";
         "Ss" = "set";
         "U" = "undo -w";
         "V" = "mode-enter caret ;; selection-toggle --line";
         "ZZ" = "quit --save";
         "[[" = "navigate prev";
         "]]" = "navigate next";
-        "b" = "cmd-set-text -s :quickmark-load";
         "co" = "tab-only";
         "da" = "download-cancel";
         "dc" = "download-clear";
         "dp" = "download";
-        "gB" = "cmd-set-text -s :bookmark-load -t";
         "gC" = "tab-clone";
         "gD" = "tab-give";
         "gU" = "navigate up -t";
-        "gb" = "cmd-set-text -s :bookmark-load";
         "gf" = "view-source";
-        "gg" = "scroll-to-perc 0";
-        "sm" = "mode-enter set_mark";
 
         "<Ctrl-Q>" = null; # Quit
         "<Ctrl-Shift-W>" = null; # CLose tub
