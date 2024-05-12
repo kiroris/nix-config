@@ -46,8 +46,8 @@
         "<Ctrl-p>" = "tab-pin";
         "<Ctrl-W>" = "tab-close";
         "<Ctrl-s>" = null; # stop.
-        "<Ctrl-Shift-W>" = null; # close.
         "<Ctrl-Shift-W>" = null; # tab-close.
+        "<Ctrl-Return>" = "selection-follow -t";
 
 
         # Macro.
@@ -88,10 +88,26 @@
         "<Ctrl-Shift-N>" = "open -p";
 
 
+        # Settings and lists.
+        "Ss" = "set";
+        "Sh" = "history";
+        "Sq" = "bookmark-list";
+        "Sb" = "bookmark-list --jump";
+
+
         # Open tab.
         O = "cmd-set-text -s :open -t";
         go = null; # cmd-set-text :open {url:pretty}.
         gO = null; # cmd-set-text :open -t -r {url:pretty}.
+
+
+        # navigate
+        gu = "navigate up";
+        gU = "navigate up -t";
+        "[[" = "navigate prev";
+        "]]" = "navigate next";
+        "<Ctrl-A>" = "navigate increment";
+        "<Ctrl-X>" = "navigate decrement";
 
 
         # Scroll.
@@ -167,14 +183,11 @@
 
 
         # Mode.
+        i = "mode-enter insert"; # last.
         "'" = "mode-enter jump_mark";
-        "sm" = "mode-enter set_mark";
+        sm = "mode-enter set_mark";
         "<Ctrl-V>" = "mode-enter passthrough";
-        "V" = "mode-enter caret ;; selection-toggle --line";
-
-
-
-
+        V = "mode-enter caret ;; selection-toggle --line";
 
 
 
@@ -195,19 +208,13 @@
 
 
 
-        "Sb" = "bookmark-list --jump";
-        "Sq" = "bookmark-list";
 
-
-        "<Ctrl-A>" = "navigate increment";
         "<Ctrl-Alt-p>" = "print";
 
 
-        "<Ctrl-Return>" = "selection-follow -t";
         "<Ctrl-Shift-T>" = "undo";
 
 
-        "<Ctrl-X>" = "navigate decrement";
         "<Escape>" = "clear-keychain ;; search ;; fullscreen --leave";
         "<F11>" = "fullscreen";
         "<Return>" = "selection-follow";
@@ -219,15 +226,9 @@
         "L" = "forward";
         "N" = "search-prev";
 
-        "Sh" = "history";
-        "Ss" = "set";
+
         "U" = "undo -w";
-        "[[" = "navigate prev";
-        "]]" = "navigate next";
 
-
-        "gU" = "navigate up -t";
-        gu = "navigate up"; # LAST
 
         "gf" = "view-source"; 
 
