@@ -190,12 +190,41 @@
         V = "mode-enter caret ;; selection-toggle --line";
 
 
+        # Base keyBindings.
+        "H" = "back";
+        "L" = "forward";
+        "J" = "tab-prev";
+        "K" = "tab-next";
+
+        "<back>" = "back";
+        "<F11>" = "fullscreen";
+        "<forward>" = "forward";
+        "<Ctrl-Alt-p>" = "print";
+        "<Return>" = "selection-follow";
+        "<Escape>" = "clear-keychain ;; search ;; fullscreen --leave";
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # Undo.
+        "U" = "undo -w";
+        "<Ctrl-Shift-T>" = "undo";
 
 
 
@@ -209,25 +238,14 @@
 
 
 
-        "<Ctrl-Alt-p>" = "print";
 
 
-        "<Ctrl-Shift-T>" = "undo";
 
 
-        "<Escape>" = "clear-keychain ;; search ;; fullscreen --leave";
-        "<F11>" = "fullscreen";
-        "<Return>" = "selection-follow";
-        "<back>" = "back";
-        "<forward>" = "forward";
-        "H" = "back";
-        "J" = "tab-prev";
-        "K" = "tab-next";
-        "L" = "forward";
+
         "N" = "search-prev";
 
 
-        "U" = "undo -w";
 
 
         "gf" = "view-source"; 
