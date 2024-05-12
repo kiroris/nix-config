@@ -51,26 +51,21 @@
 
 
         # Tabs.
-        gm = null; #tab-move
-
-        "g$" = null; # tab-focus -1
-        g0 = null; # tab-focus 1
-        gJ = null; # tab-move +
-        gK = null; # tab-move -
         co = "tab-only";
-        gC = "tab-clone";
         gD = "tab-give";
-        D = "tab-close -o";
+        gC = "tab-clone";
+
         d = null;
-        "<Ctrl-W>" = "tab-close";
-        "<Ctrl-p>" = "tab-pin";
+        D = "tab-close -o";
+
         "<Alt-m>" = "tab-mute";
-        "<Ctrl-PgDown>" = "tab-next";
-        "<Ctrl-PgUp>" = "tab-prev";
-        gt = null; # cmd-set-text -s :tab-select
+        "<Ctrl-p>" = "tab-pin";
+        "<Ctrl-W>" = "tab-close";
 
 
-
+        # Tab focus.
+        gm = null; #tab-move
+        g0 = null; # tab-focus 1
         "<Alt-1>" = "tab-focus 1";
         "<Alt-2>" = "tab-focus 2";
         "<Alt-3>" = "tab-focus 3";
@@ -80,8 +75,18 @@
         "<Alt-7>" = "tab-focus 7";
         "<Alt-8>" = "tab-focus 8";
         "<Alt-9>" = "tab-focus -1";
+        "g$" = null; # tab-focus -1
+
+        gK = null; # tab-move -
+        "<Ctrl-PgUp>" = "tab-prev";
+
+        gJ = null; # tab-move +
+        "<Ctrl-PgDown>" = "tab-next";
+
         "<Ctrl-Tab>" = "tab-focus last";
         T = "cmd-set-text -sr :tab-focus";
+        gt = null; # cmd-set-text -s :tab-select
+
 
 
         # Quickmarks.
