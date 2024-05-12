@@ -22,6 +22,11 @@
 
       normal = {
 
+        # Main pages.
+        "<Ctrl-H>" = "home";
+        "<Ctrl-T>" = "open -t";
+
+
         # Macro.
         "@" = "macro-run";
         "!" = "macro-record";
@@ -39,6 +44,17 @@
         ":" = "cmd-set-text :";
         "?" = "cmd-set-text ?";
         "." = "cmd-repeat-last";
+
+  
+        # Open window.
+        "<Ctrl-N>" = "open -w";
+        "<Ctrl-Shift-N>" = "open -p";
+
+
+        # Open tab.
+        "O" = "cmd-set-text -s :open -t";
+        "go" = null; # cmd-set-text :open {url:pretty}
+        "gO" = null; # cmd-set-text :open -t -r {url:pretty}
 
 
         # Scroll.
@@ -130,9 +146,12 @@
 
 
 
-        "<Ctrl-N>" = "open -w";
-        "<Ctrl-Shift-N>" = "open -p";
 
+
+
+
+        "PP" = "open -t -- {primary}";
+        "Pp" = "open -t -- {clipboard}";
 
 
         "'" = "mode-enter jump_mark";
@@ -147,12 +166,10 @@
         "<Ctrl-Alt-p>" = "print";
 
         "<Ctrl-F5>" = "reload -f";
-        "<Ctrl-H>" = "home";
 
         "<Ctrl-Return>" = "selection-follow -t";
         "<Ctrl-Shift-Q>" = "quit";
         "<Ctrl-Shift-T>" = "undo";
-        "<Ctrl-T>" = "open -t";
         "<Ctrl-V>" = "mode-enter passthrough";
         "<Ctrl-X>" = "navigate decrement";
         "<Escape>" = "clear-keychain ;; search ;; fullscreen --leave";
@@ -167,9 +184,7 @@
         "K" = "tab-next";
         "L" = "forward";
         "N" = "search-prev";
-        "O" = "cmd-set-text -s :open -t";
-        "PP" = "open -t -- {primary}";
-        "Pp" = "open -t -- {clipboard}";
+
         "R" = "reload -f";
         "Sh" = "history";
         "Ss" = "set";
@@ -190,9 +205,7 @@
         "<Ctrl-s>" = null; # Stop
         "<Ctrl-Shift-W>" = null; # Close
 
-        "gO" = null; # cmd-set-text :open -t -r {url:pretty}
         "gd" = null; # download
-        "go" = null; # cmd-set-text :open {url:pretty}
 
       };
 
