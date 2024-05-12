@@ -45,6 +45,9 @@
         "<Alt-m>" = "tab-mute";
         "<Ctrl-p>" = "tab-pin";
         "<Ctrl-W>" = "tab-close";
+        "<Ctrl-s>" = null; # stop.
+        "<Ctrl-Shift-W>" = null; # close.
+        "<Ctrl-Shift-W>" = null; # tab-close.
 
 
         # Macro.
@@ -163,6 +166,23 @@
         ";o" = "hint links fill :open {hint-url}";
 
 
+        # Mode.
+        "'" = "mode-enter jump_mark";
+        "sm" = "mode-enter set_mark";
+        "<Ctrl-V>" = "mode-enter passthrough";
+        "V" = "mode-enter caret ;; selection-toggle --line";
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -172,8 +192,7 @@
         "Pp" = "open -t -- {clipboard}";
 
 
-        "'" = "mode-enter jump_mark";
-        "sm" = "mode-enter set_mark";
+
 
 
         "Sb" = "bookmark-list --jump";
@@ -186,7 +205,8 @@
 
         "<Ctrl-Return>" = "selection-follow -t";
         "<Ctrl-Shift-T>" = "undo";
-        "<Ctrl-V>" = "mode-enter passthrough";
+
+
         "<Ctrl-X>" = "navigate decrement";
         "<Escape>" = "clear-keychain ;; search ;; fullscreen --leave";
         "<F11>" = "fullscreen";
@@ -202,17 +222,16 @@
         "Sh" = "history";
         "Ss" = "set";
         "U" = "undo -w";
-        "V" = "mode-enter caret ;; selection-toggle --line";
         "[[" = "navigate prev";
         "]]" = "navigate next";
 
 
         "gU" = "navigate up -t";
-        "gf" = "view-source"; #LAAAAAAAST
+        gu = "navigate up"; # LAST
 
-        "<Ctrl-Shift-W>" = null; # CLose tub
-        "<Ctrl-s>" = null; # Stop
-        "<Ctrl-Shift-W>" = null; # Close
+        "gf" = "view-source"; 
+
+
 
 
       };
