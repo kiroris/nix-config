@@ -23,8 +23,9 @@
       normal = {
 
         # Macro.
-        "!" = "macro-record";
         "@" = "macro-run";
+        "!" = "macro-record";
+        "q" = null; # Macro-record.
 
 
         # Zoom.
@@ -39,6 +40,7 @@
         "?" = "cmd-set-text ?";
         "." = "cmd-repeat-last";
 
+
         # Scroll.
         G = "scroll-to-perc";
         gg = "scroll-to-perc 0";
@@ -49,6 +51,26 @@
 
 
         # Tabs.
+        gm = null; #tab-move
+
+        "g$" = null; # tab-focus -1
+        g0 = null; # tab-focus 1
+        gJ = null; # tab-move +
+        gK = null; # tab-move -
+        co = "tab-only";
+        gC = "tab-clone";
+        gD = "tab-give";
+        D = "tab-close -o";
+        d = null;
+        "<Ctrl-W>" = "tab-close";
+        "<Ctrl-p>" = "tab-pin";
+        "<Alt-m>" = "tab-mute";
+        "<Ctrl-PgDown>" = "tab-next";
+        "<Ctrl-PgUp>" = "tab-prev";
+        gt = null; # cmd-set-text -s :tab-select
+
+
+
         "<Alt-1>" = "tab-focus 1";
         "<Alt-2>" = "tab-focus 2";
         "<Alt-3>" = "tab-focus 3";
@@ -103,7 +125,8 @@
 
 
 
-
+        "<Ctrl-N>" = "open -w";
+        "<Ctrl-Shift-N>" = "open -p";
 
 
 
@@ -115,24 +138,18 @@
         "Sq" = "bookmark-list";
 
 
-        "<Alt-m>" = "tab-mute";
         "<Ctrl-A>" = "navigate increment";
         "<Ctrl-Alt-p>" = "print";
 
         "<Ctrl-F5>" = "reload -f";
         "<Ctrl-H>" = "home";
-        "<Ctrl-N>" = "open -w";
-        "<Ctrl-PgDown>" = "tab-next";
-        "<Ctrl-PgUp>" = "tab-prev";
+
         "<Ctrl-Return>" = "selection-follow -t";
-        "<Ctrl-Shift-N>" = "open -p";
         "<Ctrl-Shift-Q>" = "quit";
         "<Ctrl-Shift-T>" = "undo";
         "<Ctrl-T>" = "open -t";
         "<Ctrl-V>" = "mode-enter passthrough";
-        "<Ctrl-W>" = "tab-close";
         "<Ctrl-X>" = "navigate decrement";
-        "<Ctrl-p>" = "tab-pin";
         "<Escape>" = "clear-keychain ;; search ;; fullscreen --leave";
         "<F11>" = "fullscreen";
         "<F5>" = "reload";
@@ -140,7 +157,6 @@
         "<Shift-Q>" = "close";
         "<back>" = "back";
         "<forward>" = "forward";
-        "D" = "tab-close -o";
         "H" = "back";
         "J" = "tab-prev";
         "K" = "tab-next";
@@ -157,12 +173,10 @@
         "ZZ" = "quit --save";
         "[[" = "navigate prev";
         "]]" = "navigate next";
-        "co" = "tab-only";
         "da" = "download-cancel";
         "dc" = "download-clear";
         "dp" = "download";
-        "gC" = "tab-clone";
-        "gD" = "tab-give";
+
         "gU" = "navigate up -t";
         "gf" = "view-source";
 
@@ -170,16 +184,10 @@
         "<Ctrl-Shift-W>" = null; # CLose tub
         "<Ctrl-s>" = null; # Stop
         "<Ctrl-Shift-W>" = null; # Close
-        "g$" = null; # tab-focus -1
-        "g0" = null; # tab-focus 1
-        "gJ" = null; # tab-move +
-        "gK" = null; # tab-move -
+
         "gO" = null; # cmd-set-text :open -t -r {url:pretty}
         "gd" = null; # download
-        "gm" = null; #tab-move
         "go" = null; # cmd-set-text :open {url:pretty}
-        "gt" = null; # cmd-set-text -s :tab-select
-        "q" = null; # macro-record
 
       };
 
