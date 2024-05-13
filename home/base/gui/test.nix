@@ -152,6 +152,7 @@
 
 
         # Bookmarks.
+        wB = null; # cmd-set-text -s :bookmark-load -w.
         ab = "bookmark-add";
         b = "cmd-set-text -s :bookmark-load";
         B = "cmd-set-text -s :bookmark-load -t";
@@ -184,9 +185,10 @@
 
 
         # Mode.
-        i = "mode-enter insert"; # last.
-        "'" = "mode-enter jump_mark";
+        v = "mode-enter caret";
+        i = "mode-enter insert";
         sm = "mode-enter set_mark";
+        "'" = "mode-enter jump_mark";
         "<Ctrl-V>" = "mode-enter passthrough";
         V = "mode-enter caret ;; selection-toggle --line";
 
@@ -216,6 +218,12 @@
 
 
 
+        sf = "save";
+        sk = "cmd-set-text -s :bind";
+        sl = "cmd-set-text -s :set -t";
+        ss = "cmd-set-text -s :set";
+
+
 
 
 
@@ -226,6 +234,7 @@
         # Undo.
         "U" = "undo -w";
         "<Ctrl-Shift-T>" = "undo";
+        u = "undo";
 
 
 
