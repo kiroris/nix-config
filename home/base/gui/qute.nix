@@ -1,26 +1,51 @@
 {
 
+#  ██████╗ ██╗   ██╗████████╗███████╗██████╗ ██████╗  ██████╗ ██╗    ██╗███████╗███████╗██████╗ 
+# ██╔═══██╗██║   ██║╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██╔═══██╗██║    ██║██╔════╝██╔════╝██╔══██╗
+# ██║   ██║██║   ██║   ██║   █████╗  ██████╔╝██████╔╝██║   ██║██║ █╗ ██║███████╗█████╗  ██████╔╝
+# ██║▄▄ ██║██║   ██║   ██║   ██╔══╝  ██╔══██╗██╔══██╗██║   ██║██║███╗██║╚════██║██╔══╝  ██╔══██╗
+# ╚██████╔╝╚██████╔╝   ██║   ███████╗██████╔╝██║  ██║╚██████╔╝╚███╔███╔╝███████║███████╗██║  ██║
+#  ╚══▀▀═╝  ╚═════╝    ╚═╝   ╚══════╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝ ╚══════╝╚══════╝╚═╝  ╚═╝
+
+  # Basic qutebrowser settings.
   programs.qutebrowser = {
 
+    # QUtebrowser enable.
     enable = true;
 
     # Disable autoconfig.
     loadAutoconfig = false;
 
+    # Search engines.
+    searchEngines = {
+
+      aw = "https://wiki.archlinux.org/?search={}";
+      nw = "https://nixos.wiki/index.php?search={}";
+      g = "https://www.google.com/search?hl=en&amp;q={}";
+      yt = "https://translate.yandex.ru/?source_lang=en&target_lang=ru&text={}";
+      w = "https://en.wikipedia.org/wiki/Special:Search?search={}&amp;go=Go&amp;ns0=1";
+      np = "https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query={}";
+
+    };
+
+
     # Quickmarks.
     quickmarks = {
 
-      GitHub = "github.com";
-      "Jitsi Meet" = "vc.autistici.org";
       Proton = "proton.me";
+      GitHub = "github.com";
       YouTube = "youtube.com";
+      MyNixOS = "mynixos.com";
+      "Jitsi Meet" = "vc.autistici.org";
       "Fat Secret" = "https://www.fatsecret.com/Diary.aspx?pa=fj";
 
     };
 
 
+    # Key bindings.
     keyBindings = {
 
+      # Key bindings for 'normal' mode.
       normal = {
 
         # Extra keyBindings.
@@ -312,49 +337,6 @@
         tsH = null; # config-cycle -p -t -u *://*.{url:host}/* content.javascript.enabled ;; reload
         tsh = null; # config-cycle -p -t -u *://{url:host}/* content.javascript.enabled ;; reload
         tsu = null; # config-cycle -p -t -u {url} content.javascript.enabled ;; reload
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       };
 
