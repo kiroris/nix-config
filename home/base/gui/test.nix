@@ -218,11 +218,11 @@
         yt = "yank title";
         YT = "yank title -s";
         yd = null; # yank domain.
-        YD = null; # yank domain -s.
+        yD = null; # yank domain -s.
         yp = null; # yank pretty-url.
-        YP = null; # yank pretty-url -s.
+        yP = null; # yank pretty-url -s.
         ym = null; # yank inline [{title}]({url}).
-        YM = null; # yank inline [{title}]({url}) -s.
+        yM = null; # yank inline [{title}]({url}) -s.
 
 
         # Hints.
