@@ -20,9 +20,9 @@
     # Settings.
     settings = {
 
-      auto_save.session = true;
+      auto_save.session = false;
 
-      session.lazy_restore = true;
+      session.lazy_restore = false;
 
       # Defautl pages.
       #url = {
