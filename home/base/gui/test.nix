@@ -11,10 +11,10 @@
     quickmarks = {
 
       GitHub = "github.com";
-      Jitsi Meet = "vc.autistici.org";
+      "Jitsi Meet" = "vc.autistici.org";
       Proton = "proton.me";
       YouTube = "youtube.com";
-      Fat Secret = "https://www.fatsecret.com/Diary.aspx?pa=fj";
+      "Fat Secret" = "https://www.fatsecret.com/Diary.aspx?pa=fj";
 
     };
 
@@ -100,8 +100,9 @@
 
         # Download.
         dp = "download";
-        dc = "download-clear";
-        da = "download-cancel";
+        dl = "download-clear";
+        dc = "download-cancel";
+        ad = null; # download-cancel.
 
 
         # Exit.
@@ -211,6 +212,19 @@
         B = "cmd-set-text -s :bookmark-load -t";
 
 
+        # Copy.
+        yy = "yank";
+        YY = "yank -s";
+        yt = "yank title";
+        YT = "yank title -s";
+        yd = null; # yank domain.
+        YD = null; # yank domain -s.
+        yp = null; # yank pretty-url.
+        YP = null; # yank pretty-url -s.
+        ym = null; # yank inline [{title}]({url}).
+        YM = null; # yank inline [{title}]({url}) -s.
+
+
         # Hints.
         f = "hint";
         F = "hint all tab";
@@ -277,26 +291,6 @@
 
 
 
-#yD: yank domain -s
-#
-#yM: yank inline [{title}]({url}) -s
-#
-#yP: yank pretty-url -s
-#
-#yT: yank title -s
-#
-#yY: yank -s
-#
-#yd: yank domain
-#
-#ym: yank inline [{title}]({url})
-#
-#yp: yank pretty-url
-#
-#yt: yank title
-#
-#yy: yank
-
 
 
 
@@ -343,6 +337,18 @@
 
 
       };
+
+
+
+
+
+
+
+
+
+
+
+
 
     };
 
