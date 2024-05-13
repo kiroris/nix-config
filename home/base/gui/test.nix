@@ -10,10 +10,11 @@
     # Quickmarks.
     quickmarks = {
 
-      github = "github.com";
+      GitHub = "github.com";
       jitsi = "vc.autistici.org";
       proton = "proton.me";
       youtube = "youtube.com";
+      fat-secret = "https://www.fatsecret.com/Diary.aspx?pa=fj";
 
     };
 
@@ -56,6 +57,18 @@
         q = null; # macro-record.
 
 
+        # Devtools.
+        wi = "devtools";
+        ws = "view-source";
+        wIk = "devtools top";
+        wIh = "devtools left";
+        wIl = "devtools right";
+        wIf = "devtools-focus";
+        wIj = "devtools bottom";
+        wIw = "devtools window";
+        gf = null; # view-source. 
+
+
         # Reload.
         r = "reload";
         R = "reload -f";
@@ -82,7 +95,7 @@
         "<Ctrl-Q>" = null; # quit.
         "<Ctrl-Shift-Q>" = "quit";
 
-  
+
         # Open window.
         "<Ctrl-N>" = "open -w";
         "<Ctrl-Shift-N>" = "open -p";
@@ -98,15 +111,22 @@
         # Open tab.
         o = "cmd-set-text -s :open";
         O = "cmd-set-text -s :open -t";
+        ga = null; # open -t.
+        wo = null; # cmd-set-text -s :open -w.
+        xo = null; # cmd-set-text -s :open -b.
         go = null; # cmd-set-text :open {url:pretty}.
+        wO = null; # cmd-set-text :open -w {url:pretty}.
         gO = null; # cmd-set-text :open -t -r {url:pretty}.
+        xO = null; # cmd-set-text :open -b -r {url:pretty}.
 
 
-        # navigate
+        # Navigate
         gu = "navigate up";
         gU = "navigate up -t";
         "[[" = "navigate prev";
         "]]" = "navigate next";
+        "{{" = "navigate prev -t";
+        "}}" = "navigate next -t";
         "<Ctrl-A>" = "navigate increment";
         "<Ctrl-X>" = "navigate decrement";
 
@@ -146,12 +166,15 @@
 
 
         # Quickmarks.
+        wb = null; # cmd-set-text -s :quickmark-load -w.
         am = "quickmark-save";
         m = "cmd-set-text -s :quickmark-load";
         M = "cmd-set-text -s :quickmark-load -t";
 
 
         # Bookmarks.
+        gb = null; # cmd-set-text -s :bookmark-load.
+        gB = null; # cmd-set-text -s :bookmark-load -t.
         wB = null; # cmd-set-text -s :bookmark-load -w.
         ab = "bookmark-add";
         b = "cmd-set-text -s :bookmark-load";
@@ -159,8 +182,9 @@
 
 
         # Hints.
-        F = "hint all tab";
         f = "hint";
+        F = "hint all tab";
+        wf = null; # hint all window.
 
         ";I" = "hint images tab";
         ";i" = "hint images";
@@ -200,11 +224,22 @@
         K = "tab-next";
 
         "<back>" = "back";
+        wh = null; # back -w.
         "<F11>" = "fullscreen";
+        wl = null;# forward -w.
         "<forward>" = "forward";
         "<Ctrl-Alt-p>" = "print";
         "<Return>" = "selection-follow";
         "<Escape>" = "clear-keychain ;; search ;; fullscreen --leave";
+
+
+
+
+
+
+
+
+
 
 
 
@@ -244,6 +279,8 @@
         Pp = "open -t -- {clipboard}";
         pP = "open -- {primary}";
         pp = "open -- {clipboard}";
+        wP = null; # open -w -- {primary}.
+        wp = null; # open -w -- {clipboard}.
 
 
 
@@ -263,7 +300,6 @@
 
 
 
-        "gf" = "view-source"; 
 
 
 
