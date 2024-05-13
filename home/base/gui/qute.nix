@@ -6,7 +6,7 @@
 
     # Disable autoconfig.
     loadAutoconfig = false;
-    
+
     # Quickmarks.
     quickmarks = {
 
@@ -25,6 +25,8 @@
 
         # Extra keyBindings.
         al = "adblock-update";
+        dark = "set content.proxy socks://localhost:9050";
+        clear = "set content.proxy system";
 
 
         # Zoom.
