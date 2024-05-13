@@ -24,6 +24,8 @@
 
       session.lazy_restore = false;
 
+      content.fullscreen.window = true; 
+
       # Defautl pages.
       #url = {
 
