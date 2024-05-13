@@ -23,15 +23,30 @@
 
       normal = {
 
+        # Extra keyBindings.
+        al = "adblock-update";
+
+
         # Zoom.
         "+" = "zoom";
         "=" = "zoom-in";
         "-" = "zoom-out";
 
 
+        # Search.
+        N = "search-prev";
+        n = "search-next";
+
+
         # Main pages.
         "<Ctrl-H>" = "home";
         "<Ctrl-T>" = "open -t";
+
+
+        # Undo.
+        u = "undo";
+        U = "undo -w";
+        "<Ctrl-Shift-T>" = null; # undo.
 
 
         # Tabs. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -105,8 +120,21 @@
         # Settings and lists.
         Ss = "set";
         Sh = "history";
+        sf = null; # save.
         Sq = "bookmark-list";
         Sb = "bookmark-list --jump";
+        ss = null; # cmd-set-text -s :set.
+        sk = null; # cmd-set-text -s :bind.
+        sl = null; # cmd-set-text -s :set -t.
+
+
+        # clipboard & primary.
+        pP = "open -- {primary}";
+        pp = "open -- {clipboard}";
+        PP = "open -t -- {primary}";
+        Pp = "open -t -- {clipboard}";
+        wP = null; # open -w -- {primary}.
+        wp = null; # open -w -- {clipboard}.
 
 
         # Open tab.
@@ -225,6 +253,11 @@
         J = "tab-prev";
         K = "tab-next";
 
+        k = "scroll up";
+        h = "scroll left";
+        j = "scroll down";
+        l = "scroll right";
+
         "<back>" = "back";
         wh = null; # back -w.
         "<F11>" = "fullscreen";
@@ -244,6 +277,25 @@
 
 
 
+#yD: yank domain -s
+#
+#yM: yank inline [{title}]({url}) -s
+#
+#yP: yank pretty-url -s
+#
+#yT: yank title -s
+#
+#yY: yank -s
+#
+#yd: yank domain
+#
+#ym: yank inline [{title}]({url})
+#
+#yp: yank pretty-url
+#
+#yt: yank title
+#
+#yy: yank
 
 
 
@@ -255,10 +307,6 @@
 
 
 
-        sf = "save";
-        sk = "cmd-set-text -s :bind";
-        sl = "cmd-set-text -s :set -t";
-        ss = "cmd-set-text -s :set";
 
 
 
@@ -268,35 +316,23 @@
 
 
 
-        # Undo.
-        "U" = "undo -w";
-        "<Ctrl-Shift-T>" = "undo";
-        u = "undo";
-
-
-
-
-        # clipboard & primary.
-        pP = "open -- {primary}";
-        pp = "open -- {clipboard}";
-        PP = "open -t -- {primary}";
-        Pp = "open -t -- {clipboard}";
-        wP = null; # open -w -- {primary}.
-        wp = null; # open -w -- {clipboard}.
-
-
-
-        h = "scroll left";
-        j = "scroll down";
-        k = "scroll up";
-        l = "scroll right";
 
 
 
 
 
-        N = "search-prev";
-        n = "search-next";
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
