@@ -71,13 +71,13 @@
 
 
         # Download.
-        "dp" = "download";
-        "dc" = "download-clear";
-        "da" = "download-cancel";
+        dp = "download";
+        dc = "download-clear";
+        da = "download-cancel";
 
 
         # Exit.
-        "ZZ" = "quit --save";
+        ZZ = "quit --save";
         "<Shift-Q>" = "close";
         "<Ctrl-Q>" = null; # quit.
         "<Ctrl-Shift-Q>" = "quit";
@@ -89,13 +89,14 @@
 
 
         # Settings and lists.
-        "Ss" = "set";
-        "Sh" = "history";
-        "Sq" = "bookmark-list";
-        "Sb" = "bookmark-list --jump";
+        Ss = "set";
+        Sh = "history";
+        Sq = "bookmark-list";
+        Sb = "bookmark-list --jump";
 
 
         # Open tab.
+        o = "cmd-set-text -s :open";
         O = "cmd-set-text -s :open -t";
         go = null; # cmd-set-text :open {url:pretty}.
         gO = null; # cmd-set-text :open -t -r {url:pretty}.
@@ -191,10 +192,10 @@
 
 
         # Base keyBindings.
-        "H" = "back";
-        "L" = "forward";
-        "J" = "tab-prev";
-        "K" = "tab-next";
+        H = "back";
+        L = "forward";
+        J = "tab-prev";
+        K = "tab-next";
 
         "<back>" = "back";
         "<F11>" = "fullscreen";
@@ -230,20 +231,25 @@
 
 
 
-        "PP" = "open -t -- {primary}";
-        "Pp" = "open -t -- {clipboard}";
+        PP = "open -t -- {primary}";
+        Pp = "open -t -- {clipboard}";
+        pP = "open -- {primary}";
+        pp = "open -- {clipboard}";
 
 
 
-
-
-
+        h = "scroll left";
+        j = "scroll down";
+        k = "scroll up";
+        l = "scroll right";
 
 
 
 
 
         "N" = "search-prev";
+        n = "search-next";
+
 
 
 
