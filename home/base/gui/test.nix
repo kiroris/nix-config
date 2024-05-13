@@ -49,10 +49,10 @@
         "<Ctrl-Shift-T>" = null; # undo.
 
 
-        # Tabs. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        co = "tab-only";
-        gD = "tab-give";
-        gC = "tab-clone";
+        # Tabs.
+        tO = "tab-only";
+        tG = "tab-give";
+        tc = "tab-clone";
         gd = null; # download.
 
         d = null;
@@ -262,6 +262,9 @@
 
 
         # Base keyBindings.
+        tl = null; # forward -t.
+        th = null; # back -t.
+
         H = "back";
         L = "forward";
         J = "tab-prev";
@@ -282,16 +285,31 @@
         "<Escape>" = "clear-keychain ;; search ;; fullscreen --leave";
 
 
-
-
-
-
-
-
-
-
-
-
+        # Config-cycle.
+        tCH = null; # config-cycle -p -u *://*.{url:host}/* content.cookies.accept all no-3rdparty never ;; reload
+        tCh = null; # config-cycle -p -u *://{url:host}/* content.cookies.accept all no-3rdparty never ;; reload
+        tCu = null; # config-cycle -p -u {url} content.cookies.accept all no-3rdparty never ;; reload
+        tIH = null; # config-cycle -p -u *://*.{url:host}/* content.images ;; reload
+        tIh = null; # config-cycle -p -u *://{url:host}/* content.images ;; reload
+        tIu = null; # config-cycle -p -u {url} content.images ;; reload
+        tPH = null; # config-cycle -p -u *://*.{url:host}/* content.plugins ;; reload
+        tPh = null; # config-cycle -p -u *://{url:host}/* content.plugins ;; reload
+        tPu = null; # config-cycle -p -u {url} content.plugins ;; reload
+        tSH = null; # config-cycle -p -u *://*.{url:host}/* content.javascript.enabled ;; reload
+        tSh = null; # config-cycle -p -u *://{url:host}/* content.javascript.enabled ;; reload
+        tSu = null; # config-cycle -p -u {url} content.javascript.enabled ;; reload
+        tcH = null; # config-cycle -p -t -u *://*.{url:host}/* content.cookies.accept all no-3rdparty never ;; reload
+        tch = null; # config-cycle -p -t -u *://{url:host}/* content.cookies.accept all no-3rdparty never ;; reload
+        tcu = null; # config-cycle -p -t -u {url} content.cookies.accept all no-3rdparty never ;; reload
+        tiH = null; # config-cycle -p -t -u *://*.{url:host}/* content.images ;; reload
+        tih = null; # config-cycle -p -t -u *://{url:host}/* content.images ;; reload
+        tiu = null; # config-cycle -p -t -u {url} content.images ;; reload
+        tpH = null; # config-cycle -p -t -u *://*.{url:host}/* content.plugins ;; reload
+        tph = null; # config-cycle -p -t -u *://{url:host}/* content.plugins ;; reload
+        tpu = null; # config-cycle -p -t -u {url} content.plugins ;; reload
+        tsH = null; # config-cycle -p -t -u *://*.{url:host}/* content.javascript.enabled ;; reload
+        tsh = null; # config-cycle -p -t -u *://{url:host}/* content.javascript.enabled ;; reload
+        tsu = null; # config-cycle -p -t -u {url} content.javascript.enabled ;; reload
 
 
 
