@@ -11,10 +11,10 @@
     quickmarks = {
 
       GitHub = "github.com";
-      jitsi = "vc.autistici.org";
-      proton = "proton.me";
-      youtube = "youtube.com";
-      fat-secret = "https://www.fatsecret.com/Diary.aspx?pa=fj";
+      Jitsi Meet = "vc.autistici.org";
+      Proton = "proton.me";
+      YouTube = "youtube.com";
+      Fat Secret = "https://www.fatsecret.com/Diary.aspx?pa=fj";
 
     };
 
@@ -90,6 +90,7 @@
 
 
         # Exit.
+        ZQ = null; # quit.
         ZZ = "quit --save";
         "<Shift-Q>" = "close";
         "<Ctrl-Q>" = null; # quit.
@@ -121,8 +122,8 @@
 
 
         # Navigate
-        gu = "navigate up";
-        gU = "navigate up -t";
+        gu = null; # navigate up.
+        gU = null; # navigate up -t.
         "[[" = "navigate prev";
         "]]" = "navigate next";
         "{{" = "navigate prev -t";
@@ -143,6 +144,7 @@
         # Tab focus.
         gm = null; # tab-move.
         g0 = null; # tab-focus 1.
+        "g^" = null; # tab-focus 1.
         "<Alt-1>" = "tab-focus 1";
         "<Alt-2>" = "tab-focus 2";
         "<Alt-3>" = "tab-focus 3";
@@ -274,11 +276,11 @@
 
 
 
-
-        PP = "open -t -- {primary}";
-        Pp = "open -t -- {clipboard}";
+        # clipboard & primary.
         pP = "open -- {primary}";
         pp = "open -- {clipboard}";
+        PP = "open -t -- {primary}";
+        Pp = "open -t -- {clipboard}";
         wP = null; # open -w -- {primary}.
         wp = null; # open -w -- {clipboard}.
 
@@ -293,7 +295,7 @@
 
 
 
-        "N" = "search-prev";
+        N = "search-prev";
         n = "search-next";
 
 
