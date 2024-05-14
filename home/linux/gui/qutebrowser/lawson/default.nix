@@ -21,7 +21,7 @@
 
       webpage = {
 
-        preferred_color_scheme = "dark";
+        #preferred_color_scheme = "dark";
 
       };
 

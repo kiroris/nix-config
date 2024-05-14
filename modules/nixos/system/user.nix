@@ -9,6 +9,7 @@
 
   # Don't allow mutation of users outside the config.
   users.mutableUsers = false;
+
   # Set of default user shell.
   users.defaultUserShell = pkgs.zsh;
 

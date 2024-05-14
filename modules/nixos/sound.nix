@@ -38,7 +38,7 @@
   environment.systemPackages = with pkgs; [
 
     pavucontrol
-    pulseaudio # provides `pactl`, which is required by some apps(e.g. sonic-pi)
+    pulseaudio # provides `pactl`, which is required by some apps(e.g. sonic-pi).
     pulsemixer
     playerctl
     pamixer

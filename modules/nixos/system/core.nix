@@ -15,9 +15,16 @@
       
       # Systemd-boot settings.
       systemd-boot = {
+
+        # Systemd boot enable.
         enable = true;
+
+        # Set console mod.
         consoleMode = lib.mkDefault "max";
+
+        # Set limit of configuration.
         configurationLimit = lib.mkDefault 10;
+
       };
 
       # Set a timeout to select a boot entry.
