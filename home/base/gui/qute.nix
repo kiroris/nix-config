@@ -13,7 +13,6 @@
     # QUtebrowser enable.
     enable = true;
 
-
     # Disable autoconfig.
     loadAutoconfig = true;
 

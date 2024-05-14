@@ -11,13 +11,14 @@
   imports = 
     let
       themeImports = 
-        if theme == "lawson" then [ ./rofi ./dunst ./swaylock ./waybar]
+        if theme == "lawson" then [ ./rofi ./dunst ./swaylock ./waybar ]
         else [];
     in
       [
         ./foot
         ./imv.nix
         ./mpv.nix
+        ./qutebrowser
       ] ++ themeImports;
 
 #  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣿⣿⣿⡽⣣⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
