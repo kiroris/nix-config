@@ -116,7 +116,6 @@
         dark = "set content.proxy socks://localhost:9050";
         clear = "set content.proxy system";
 
-
       };
 
     };
