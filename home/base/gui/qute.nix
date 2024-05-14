@@ -49,7 +49,7 @@
     };
 
 
-      # Search engines.
+    # Search engines.
     searchEngines = {
 
       "!google" = "https://www.google.com/search?q={}";
@@ -61,7 +61,6 @@
       "!wikipedia" = "https://en.wikipedia.org/wiki/Special:Search?search={}&amp;go=Go&amp;ns0=1";
 
     };  
-
 
 
     # Key bindings.
@@ -119,7 +118,6 @@
 
 
       };
-
 
     };
 
