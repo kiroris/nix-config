@@ -45,7 +45,7 @@
   
   
     telegram-desktop
-    firefox-wayland
+    #firefox-wayland
     element-desktop
     gnome.nautilus
     obs-studio

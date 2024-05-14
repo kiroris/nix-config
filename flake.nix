@@ -221,6 +221,8 @@
         #TODO
         #TODO
         #TODO
+        ./misc/tor.nix
+        ./misc/game.nix
       ];
 
 

@@ -14,23 +14,28 @@
   programs.qutebrowser = {
 
     # Settings.
-    Settings = {
+    settings = {
 
-    #
-    colors = {
+      #
+      colors = {
+
+      webpage = {
+
+        preferred_color_scheme = "dark";
+
+      };
 
 
 
+      };
 
+      fonts = {
+        default_family = "Fira Code";
+        default_size = "11pt";
+      };
 
 
     };
-
-    fonts = {
-      default_family = "Fira Code";
-      default_size = "11pt";
-    };
-
 
   };
 
