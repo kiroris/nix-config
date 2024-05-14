@@ -19,6 +19,20 @@
     # Settings.
     settings = {
 
+      scrolling.bar = "when-searching";
+
+      tabs.favicons.show = "pinned";
+
+      #downloads.position = "bottom";
+
+      tabs.show = "switching"; # "switching"; #"multiple";
+
+      tabs.show_switching_delay = 600;
+
+      #tabs.position = "left";
+
+      statusbar.show = "in-mode";
+
       auto_save.session = false;
 
       session.lazy_restore = false;
@@ -52,13 +66,13 @@
     # Search engines.
     searchEngines = {
 
-      "!google" = "https://www.google.com/search?q={}";
-      "!nixos-options" = "https://mynixos.com/search?q={}";
-      "!arch-wiki" = "https://wiki.archlinux.org/?search={}";
-      "!nixos-wiki" = "https://nixos.wiki/index.php?search={}";
-      "!nixos-packages" = "https://search.nixos.org/packages?channel=unstable&query={}";
-      "!translate" = "https://translate.yandex.ru/?source_lang=en&target_lang=ru&text={}";
-      "!wikipedia" = "https://en.wikipedia.org/wiki/Special:Search?search={}&amp;go=Go&amp;ns0=1";
+      "!Google" = "https://www.google.com/search?q={}";
+      "!MyNixOS" = "https://mynixos.com/search?q={}";
+      "!Arch-Wiki" = "https://wiki.archlinux.org/?search={}";
+      "!Nixos-Wiki" = "https://nixos.wiki/index.php?search={}";
+      "!Nixos-Packages" = "https://search.nixos.org/packages?channel=unstable&query={}";
+      "!Translate" = "https://translate.yandex.ru/?source_lang=en&target_lang=ru&text={}";
+      "!Wikipedia" = "https://en.wikipedia.org/wiki/Special:Search?search={}&amp;go=Go&amp;ns0=1";
 
     };  
 
@@ -79,10 +93,6 @@
         tO = "tab-only";
         tG = "tab-give";
         C = "tab-clone";
-
-
-        # Devtools.
-        ws = "view-source";
 
 
         # Exit.

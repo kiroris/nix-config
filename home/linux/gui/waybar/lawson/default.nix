@@ -351,7 +351,7 @@
 
       #workspaces button.active {
         background: #b4befe;
-        color: #000000;
+        color: #11111b;
         border-radius: 10px;
         margin-top: 10px;
         padding-left: 8px;
