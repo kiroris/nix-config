@@ -31,40 +31,39 @@
       colors = {
 
         # Set completion colors.
-        #completion = {
+        completion = {
 
-        #  fg = "#E2E0EC"; #"#CDD6F4";
-        #  odd.bg = "#0B0A10";
-        #  even.bg = "#0B0A10"; 
-        #  match.fg = "#FF5252";
+          fg = "#E2E0EC"; #"#CDD6F4";
+          odd.bg = "#0B0A10"; # #11111B
+          even.bg = "#0B0A10"; 
+          match.fg = "#FF5252";
 
-        #  scrollbar.bg = "#000000";
-        #  scrollbar.fg = "#b4befe";
+          scrollbar.bg = "#0B0A10";
+          scrollbar.fg = "#E2E0EC";
 
-        #  # Set completion category colors.
-        #  category = {
+          # Set completion category colors.
+          category = {
 
-        #    bg = "#11111B";
-        #    fg = "#CDD6F4";
-        #    ##778899
+            bg = "#0B0A10"; #"#778899";
+            fg = "#b4befe";
 
-        #    border.top = "#b4befe";
-        #    border.bottom = "#b4befe";
+            border.top = "#b4befe";
+            border.bottom = "#b4befe";
 
-        #  };
+          };
 
-        #  # Set colors for selected item.
-        #  item.selected = {
+          # Set colors for selected item.
+          item.selected = {
 
-        #    bg = "#b4befe";
-        #    border.bottom = "#11111B";
-        #    border.top = "#11111B";
-        #    fg = "#11111B";
-        #    match.fg = "#FF5252";
+            bg = "#E2E0EC";  # "#b4befe";
+            border.bottom = "#0B0A10"; #"#11111B";
+            border.top = "#0B0A10";
+            fg = "#0B0A10";
+            match.fg = "#FF5252";
 
-        #  };
+          };
 
-        #};
+        };
 
 
         #contextmenu = {

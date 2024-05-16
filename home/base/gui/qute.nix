@@ -25,7 +25,7 @@
 
       #downloads.position = "bottom";
 
-      tabs.show = "switching"; # "switching"; #"multiple";
+      tabs.show = "multiple"; # "switching"; #"multiple";
 
       tabs.show_switching_delay = 600;
 
