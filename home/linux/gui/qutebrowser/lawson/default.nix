@@ -89,14 +89,22 @@
           bar.bg = "#0B0A10";
 
           odd.bg = "#0B0A10";
+          pinned.odd.bg = "#0B0A10";
           odd.fg = "#E2E0EC";
+          pinned.odd.fg = "#E2E0EC";
           even.bg = "#0B0A10";
+          pinned.even.bg = "#0B0A10";
           even.fg = "#E2E0EC";
+          pinned.even.fg = "#E2E0EC";
 
           selected.odd.bg = "#b4befe";
+          pinned.selected.odd.bg = "#b4befe";
           selected.odd.fg = "#11111b";
+          pinned.selected.odd.fg = "#11111b";
           selected.even.bg = "#b4befe";
+          pinned.selected.even.bg = "#b4befe";
           selected.even.fg = "#11111b";
+          pinned.selected.even.fg = "#11111b";
 
           # Indicator.
           indicator = {
