@@ -33,6 +33,14 @@
       # Set colors.
       colors = {
 
+        # Web page.
+        webpage = {
+
+          darkmode.enabled = false;
+          preferred_color_scheme = "dark";
+
+        };
+
         # Hints.
         hints = {
 
@@ -46,13 +54,14 @@
         # Statusbar.
         statusbar = {
 
-          #caret.bg = "";
-          #caret.fg = "";
+          caret.bg = "#0B0A10";
+          caret.fg = "#E2E0EC";
+
           #selection.bg = "";
           #selection.fg = "";
 
-          #passthrough.bg = "";
-          #passthrough.fg = "";
+          passthrough.bg = "#0B0A10";
+          passthrough.fg = "#E2E0EC";
 
           insert.bg = "#0B0A10";
           insert.fg = "#E2E0EC";
@@ -64,23 +73,23 @@
 
 
         # Messages.
-        #messages = {
+        messages = {
 
-        #  error.bg = "#0B0A10";
-        #  error.fg = "#FF5252";
-        #  error.border = "#b4befe";
-
-
-        #  info.bg = "#0B0A10";
-        #  info.fg = "#E2E0EC";
-        #  info.border = "#b4befe";
+          error.bg = "#0B0A10";
+          error.fg = "#FF5252";
+          error.border = "#b4befe";
 
 
-        #  warning.bg = "#0B0A10";
-        #  warning.fg = "#E2E0EC";
-        #  warning.border = "";
+          info.bg = "#0B0A10";
+          info.fg = "#E2E0EC";
+          info.border = "#b4befe";
 
-        #};
+
+          warning.bg = "#0B0A10";
+          warning.fg = "#FFA500";
+          warning.border = "#b4befe";
+
+        };
 
 
         # Tabs.
