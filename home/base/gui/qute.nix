@@ -39,6 +39,8 @@
 
       content.fullscreen.window = true; 
 
+      tabs.tooltips = false;
+
       # Defautl pages.
       #url = {
 
