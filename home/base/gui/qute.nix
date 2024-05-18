@@ -29,7 +29,7 @@
 
       tabs.show_switching_delay = 600;
 
-      #tabs.position = "left";
+      #tabs.position = "top";
 
       statusbar.show = "in-mode";
 
@@ -59,6 +59,7 @@
       Proton = "proton.me";
       GitHub = "github.com";
       YouTube = "youtube.com";
+      Bitwarden = "vault.bitwarden.com";
       "Jitsi Meet" = "vc.autistici.org";
       "Fat Secret" = "https://www.fatsecret.com/Diary.aspx?pa=fj";
 
