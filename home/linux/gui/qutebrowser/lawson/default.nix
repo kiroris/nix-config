@@ -129,23 +129,22 @@
 
 
         # Downloads
-        #downloads = {
+        downloads = {
 
-        #  bar.bg = "#0B0A10";
+          bar.bg = "#0B0A10";
 
-        #  error.bg = "#0B0A10";
-        #  error.fg = "#FF5252";
+          error.bg = "#0B0A10";
+          error.fg = "#FF5252";
 
-        #  start.bg = "#0B0A10";
-        #  start.fg = "#E2E0EC";
+          start.bg = "#0B0A10";
+          start.fg = "#E2E0EC";
 
-        #  stop.bg = "#0B0A10";
-        #  stop.fg = "#CDD6F4";
+          stop.bg = "#0B0A10";
+          stop.fg = "#CDD6F4";
 
-        #  system.bg = "rgb(11,10,16)";
-        #  system.fg = "54be47";
+          system.fg = "none";
 
-        #};
+        };
 
 
         # Completion.
