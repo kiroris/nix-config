@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Создание папки screenshots, если она не существует
+mkdir -p "$HOME/Screenshots"
+
+SCREEN="$HOME/Screenshots/$(date +'%y-%m-%d_%I-%M-%S-%p').png"
+
+slurp() {
+  grim -g "$(slurp)" "$HOME/Screenshots/$(date +'%y-%m-%d_%I-%M-%S-%p').png" | wl-copy
+}
+
+fullscreen() {
+  grim "$SCREEN"| wl-copy
+  dunstify -u low --replace=699 -i "$SCREEN" -h string:x-dunst-stack-tag:6999 Screenshot asd
+}
+
+case "$1" in
+  slurp) slurp;;
+  fullscreen) fullscreen;;
+esac
