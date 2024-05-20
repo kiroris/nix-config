@@ -36,6 +36,6 @@ area() {
 
 # Use case/esac for select function.
 case "$1" in
-  area) area;;
   fullscreen) fullscreen;;
+  area) area;;
 esac

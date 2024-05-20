@@ -37,9 +37,10 @@
   
     pgadmin4-desktopmode
 
-    sway-contrib.grimshot
+    #sway-contrib.grimshot
     grim
     wf-recorder
+    slurp
     ffmpeg_5-full
     libnotify
     transmission
