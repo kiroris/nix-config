@@ -40,7 +40,6 @@
     sway-contrib.grimshot
     grim
     wf-recorder
-    wl-screenrec
     ffmpeg_5-full
     libnotify
     transmission

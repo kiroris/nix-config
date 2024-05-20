@@ -6,7 +6,8 @@ mkdir -p "$HOME/Video"
 # Variable for storing the path to the recording file.
 FILE="$HOME/Video/$(date +'%y-%m-%d_%I-%M-%S-%p').mp4"
 
-fullscreen-video() {
+# Record of fullscreen.
+fullscreen() {
   # If the file with the PID exists, it means that the recording is already underway.
   if [ -f /tmp/wf-recorder.pid ]; then
     # Getting the PID from the file.
@@ -19,7 +20,22 @@ fullscreen-video() {
   fi
 }
 
+# Record of area.
+area() {
+  # If the file with the PID exists, it means that the recording is already underway.
+  if [ -f /tmp/wf-recorder.pid ]; then
+    # Getting the PID from the file.
+    PID=$(cat /tmp/wf-recorder.pid)
+    # We stop recording, delete the file from the PID and send a notification.
+    kill $PID && rm /tmp/wf-recorder.pid && dunstify -u low --replace=228 "Recording is finished" "The record is saved as \"$(date +'%y-%m-%d_%I-%M-%S-%p').mp4\""
+  else
+    # We start recording, save the PID to a file and send a notification.
+    wf-recorder -a -g "$(slurp)" -f "$FILE" & echo $! > /tmp/wf-recorder.pid && dunstify -u low --replace=228 "Recording the area..." "The record will be saved as \"$(date +'%y-%m-%d_%I-%M-%S-%p').mp4\""
+  fi
+}
 
+# Use case/esac for select function.
 case "$1" in
-  fullscreen-video) fullscreen-video;;
+  area) area;;
+  fullscreen) fullscreen;;
 esac
