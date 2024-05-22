@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+!/usr/bin/env bash
 
 # Create directory "Video" if don't exists.
 mkdir -p "$HOME/Screenshots"
@@ -10,14 +10,14 @@ screenshot_path="$HOME/Screenshots/$(date +'%y-%m-%d_%I-%M-%S-%p').png"
 fullscreen() {
   grim "$screenshot_path"
   wl-copy < "$screenshot_path"
-  dunstify -u low -i "$screenshot_path" "Screenshot saved" "Screenshot was saved as \"$(date +'%y-%m-%d_%I-%M-%S-%p').png\""
+  dunstify -u low -i "$screenshot_path" "Screenshot saved" "Screenshot was saved as \'$(date +'%y-%m-%d_%I-%M-%S-%p').png\'"
 }
 
 # Screenshot of area.
 area() {
   grim -g "$(slurp)" "$screenshot_path"
   wl-copy < "$screenshot_path"
-  dunstify -u low -i "$screenshot_path" "Screenshot saved" "Screenshot was saved as \"$(date +'%y-%m-%d_%I-%M-%S-%p').png\""
+  dunstify -u low -i "$screenshot_path" "Screenshot saved" "Screenshot was saved as \'$(date +'%y-%m-%d_%I-%M-%S-%p').png\'"
 }
 
 # Use case/esac for select function.

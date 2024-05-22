@@ -13,10 +13,10 @@ fullscreen() {
     # Getting the PID from the file.
     PID=$(cat /tmp/wf-recorder.pid)
     # We stop recording, delete the file from the PID and send a notification.
-    kill $PID && rm /tmp/wf-recorder.pid && dunstify -u low --replace=228 "Recording is finished" "The record is saved as \"$(date +'%y-%m-%d_%I-%M-%S-%p').mp4\""
+    kill $PID && rm /tmp/wf-recorder.pid && dunstify -u low --replace=228 "Recording is finished" "The record was saved as \'$(date +'%y-%m-%d_%I-%M-%S-%p').mp4\'"
   else
     # We start recording, save the PID to a file and send a notification.
-    wf-recorder -a -f "$FILE" & echo $! > /tmp/wf-recorder.pid && dunstify -u low --replace=228 "Recording..." "The record will be saved as \"$(date +'%y-%m-%d_%I-%M-%S-%p').mp4\""
+    wf-recorder -a -f "$FILE" & echo $! > /tmp/wf-recorder.pid && dunstify -u low --replace=228 "Recording..." "The record will be saved as \'$(date +'%y-%m-%d_%I-%M-%S-%p').mp4\'"
   fi
 }
 
@@ -27,10 +27,10 @@ area() {
     # Getting the PID from the file.
     PID=$(cat /tmp/wf-recorder.pid)
     # We stop recording, delete the file from the PID and send a notification.
-    kill $PID && rm /tmp/wf-recorder.pid && dunstify -u low --replace=228 "Recording is finished" "The record is saved as \"$(date +'%y-%m-%d_%I-%M-%S-%p').mp4\""
+    kill $PID && rm /tmp/wf-recorder.pid && dunstify -u low --replace=228 "Recording is finished" "The record was saved as \'$(date +'%y-%m-%d_%I-%M-%S-%p').mp4\'"
   else
     # We start recording, save the PID to a file and send a notification.
-    wf-recorder -a -g "$(slurp)" -f "$FILE" & echo $! > /tmp/wf-recorder.pid && dunstify -u low --replace=228 "Recording the area..." "The record will be saved as \"$(date +'%y-%m-%d_%I-%M-%S-%p').mp4\""
+    wf-recorder -a -g "$(slurp)" -f "$FILE" & echo $! > /tmp/wf-recorder.pid && dunstify -u low --replace=228 "Recording the area..." "The record will be saved as \'$(date +'%y-%m-%d_%I-%M-%S-%p').mp4\'"
   fi
 }
 
