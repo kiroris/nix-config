@@ -79,13 +79,6 @@
       }}
       '';
 
-      # Copy script.
-      cp = ''
-      ''${{
-        cp "$f" "$f.1" 
-      }}
-      '';
-
       # Archive scripts.
       zip = ''%zip -r "$f.zip" "$f"'';
       p7zip = ''%7z a "$f.7z" "$f"'';
@@ -131,7 +124,6 @@
       m = null;
       n = null;
       d = null;
-      c = null;
       e = null;
       f = null;
 
@@ -160,7 +152,6 @@
       p = "paste";
       y = "copy";
       x = "cut";
-      cp = "cp";
 
       # Other functions.
       "." = "set hidden!";
