@@ -221,8 +221,8 @@
         #TODO
         #TODO
         #TODO
-        ./misc/tor.nix
-        ./misc/game.nix
+        #./misc/tor.nix
+        #./misc/game.nix
       ];
 
 
@@ -232,7 +232,7 @@
 
     homeConfigurations = {
 
-      "${myvars.username}@kiroris" = makeHomeConfiguration "lawson" "x86_64-linux" inputs.nixpkgs [
+      "${myvars.username}@wisteria" = makeHomeConfiguration "lawson" "x86_64-linux" inputs.nixpkgs [
         ./home/linux/home.nix
         #TODO
         #TODO

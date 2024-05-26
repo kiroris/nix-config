@@ -26,18 +26,18 @@
     cmatrix
     #cava
 
-    #laptop - acpi
+    ##laptop - acpi
 
     foot
 
     spotify
     gimp
 
-    zandronum
+    #zandronum
   
-    pgadmin4-desktopmode
+    #pgadmin4-desktopmode
 
-    #sway-contrib.grimshot
+    ##sway-contrib.grimshot
     grim
     wf-recorder
     slurp
@@ -55,17 +55,17 @@
   
   
   
-  #VISUAL
+  #V#ISUAL
     swaylock-effects
     rofi-wayland
-    #eww-wayland
+    ##eww-wayland
     eww
     swayidle
     waybar
     dunst
     swww
     lf
-  
+ 
     pkgs.android-udev-rules
     pkgs.home-manager
     ungoogled-chromium
@@ -74,7 +74,7 @@
     libsForQt5.breeze-qt5
   
     libsForQt5.kdenlive
-  
+ 
     nheko
   
   

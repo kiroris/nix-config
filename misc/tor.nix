@@ -27,6 +27,6 @@
 
     tor-browser
 
-  ]
+  ];
 
 }

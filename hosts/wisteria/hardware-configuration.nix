@@ -21,7 +21,7 @@
       kernelModules = [ ];
     };
     extraModulePackages = [ ];
-    kernelModules = [ "kvm-amd" ];
+    kernelModules = [  ];
     supportedFilesystems = [ "ntfs" ];
   };
 
@@ -45,13 +45,13 @@
 # ╚═╝     ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝
   # boot.
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/066B-DFFA";
+    { device = "/dev/disk/by-uuid/4CF4-2AC6";
       fsType = "vfat";
     };
 
   # nvme 500GB.
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/c603dd0e-0008-4721-85ed-7e7c8be2ccf2";
+    { device = "/dev/disk/by-uuid/e71170a2-c919-4bb9-9f29-e5852c503134";
       fsType = "btrfs";
       options = [ "subvol=@" ];
     }; 
