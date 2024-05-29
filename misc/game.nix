@@ -22,31 +22,31 @@
     gamescopeSession.enable = true;
 
     # Fix gamescope inside steam.
-    package = pkgs.steam.override {
-      extraPkgs = pkgs:
-        with pkgs; [
-          proton-ge-bin
-          gamescope
-          mangohud
-          openssl
+    #package = pkgs.steam.override {
+    #  extraPkgs = pkgs:
+    #    with pkgs; [
+    #      proton-ge-bin
+    #      gamescope
+    #      mangohud
+    #      openssl
 
-          stdenv.cc.cc.lib
-          libpulseaudio
-          libvorbis
-          keyutils
-          libkrb5
-          libpng
-          xorg.libXi
-          xorg.libXcursor
-          xorg.libXinerama
-          xorg.libXScrnSaver
+    #      stdenv.cc.cc.lib
+    #      libpulseaudio
+    #      libvorbis
+    #      keyutils
+    #      libkrb5
+    #      libpng
+    #      xorg.libXi
+    #      xorg.libXcursor
+    #      xorg.libXinerama
+    #      xorg.libXScrnSaver
 
-          source-sans
-          source-serif
-          source-han-sans
-          source-han-serif
-        ];
-    };
+    #      source-sans
+    #      source-serif
+    #      source-han-sans
+    #      source-han-serif
+    #    ];
+    #};
   };
   
   # Other games packages.

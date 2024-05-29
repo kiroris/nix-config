@@ -222,7 +222,7 @@
         #TODO
         #TODO
         #./misc/tor.nix
-        #./misc/game.nix
+        ./misc/game.nix
       ];
 
 
