@@ -21,8 +21,6 @@
     anytype
 
 
-    nheko
-
     cmatrix
     #cava
 

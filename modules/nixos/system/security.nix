@@ -32,7 +32,4 @@
 
   };
 
-  # Enable gnome-keyring for work Nheko.
-  services.gnome.gnome-keyring.enable = true;
-
 }

@@ -11,7 +11,7 @@
   imports = 
     let
       themeImports = 
-        if theme == "lawson" then [ ./rofi ./dunst ./swaylock ./waybar ]
+        if theme == "lawson" then [ ./rofi ./dunst ./swaylock ./waybar ./hyprland ]
         else [];
     in
       [
