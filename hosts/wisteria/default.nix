@@ -20,6 +20,7 @@
 
     anytype
 
+    chromium
 
     cmatrix
     #cava
@@ -66,14 +67,14 @@
  
     pkgs.android-udev-rules
     pkgs.home-manager
-    ungoogled-chromium
+    #ungoogled-chromium
   
     gnome3.adwaita-icon-theme
     libsForQt5.breeze-qt5
   
     libsForQt5.kdenlive
  
-    nheko
+    #nheko
   
   
     #(python3.withPackages (ps: with ps; [ pyqt6 ]))
