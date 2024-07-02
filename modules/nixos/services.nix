@@ -20,7 +20,7 @@
     flatpak.enable = false;
 
     # CUPS deamon to print documents.
-    printing.enable = false;
+    printing.enable = true;
 
     # ZerotierOne daemon.
     zerotierone.enable = true;

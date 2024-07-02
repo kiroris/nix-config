@@ -15,6 +15,8 @@
 
     enable = true;
 
+    sourceFirst = true;
+
     settings = {
 
       "monitor" = ",preferred,auto,1";

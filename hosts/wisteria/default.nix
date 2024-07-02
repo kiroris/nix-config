@@ -78,10 +78,11 @@
   
   
     #(python3.withPackages (ps: with ps; [ pyqt6 ]))
-    #python311Packages.pip
-    #python311Full
+    python311Packages.pip
+    python311Full
     ## Java
-    #temurin-jre-bin-18
+    #temurin-jre-bin-20
+    jdk22
     ## Rust
     #rustc
     #cargo
