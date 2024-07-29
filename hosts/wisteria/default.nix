@@ -51,6 +51,8 @@
     element-desktop
     gnome.nautilus
     obs-studio
+
+    parsec-bin
   
   
   
