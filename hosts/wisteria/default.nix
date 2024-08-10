@@ -29,6 +29,8 @@
 
     foot
 
+    rpcs3
+
     spotify
     gimp
 
