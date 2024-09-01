@@ -48,9 +48,6 @@
     };
 
     nixvim.url = "github:elythh/nixvim";
-
-
-
     
     # LanzaBoote
     #lanzaboote = {
@@ -58,30 +55,23 @@
     #  inputs.nixpkgs.follows = "nixpkgs";
     #};
 
-
     #impermanence.url = "github:nix-community/impermanence";
-
 
     #hyprland = {
     #  url = "github:hyprwm/Hyprland";
     #  inputs.nixpkgs.follows = "nixpkgs";
     #};
 
-
-
     #anyrun = {
     #  url = "github:Kirottu/anyrun";
     #  inputs.nixpkgs.follows = "nixpkgs";
     #};
-
 
     # generate iso/qcow2/docker/... image from nixos configuration
     #nixos-generators = {
     #  url = "github:nix-community/nixos-generators";
     #  inputs.nixpkgs.follows = "nixpkgs";
     #};
-
-
 
     #agenix = {
     #  url = "github:ryan4yin/ragenix";
@@ -90,14 +80,10 @@
 
     #nix-gaming.url = "github:fufexan/nix-gaming";
 
-
-
     #disko = {
     #  url = "github:nix-community/disko";
     #  inputs.nixpkgs.follows = "nixpkgs";
     #};
-
-
 
     # add git hooks to format nix code before commit
     #pre-commit-hooks = {
@@ -105,20 +91,16 @@
     #  inputs.nixpkgs.follows = "nixpkgs";
     #};
 
-
-
     #nuenv.url = "github:DeterminateSystems/nuenv";
 
     #daeuniverse.url = "github:daeuniverse/flake.nix/unstable";
 
     #attic.url = "github:zhaofengli/attic";
 
-
     #haumea = {
     #  url = "github:nix-community/haumea/main";
     #  inputs.nixpkgs.follows = "nixpkgs";
     #};
-
 
 
 ############
@@ -129,12 +111,12 @@
     #  flake = false;
     #};
 
-
     # my wallpapers
     #wallpapers = {
     #  url = "github:kiroris/wallpapers";
     #  flake = false;
     #};
+
   };
 
         #SystemConfig = {
@@ -219,13 +201,9 @@
     nixosConfigurations = {
 
       wisteria = makeNixosConfiguration "wisteria" "x86_64-linux" inputs.nixpkgs [
-        #TODO
-        #TODO
-        #TODO
         #./misc/tor.nix
         ./misc/game.nix
       ];
-
 
       #TODO
 
@@ -235,10 +213,7 @@
 
       "${myvars.username}@wisteria" = makeHomeConfiguration "hyprland" "lawson" "x86_64-linux" inputs.nixpkgs [
         ./home/linux/home.nix
-        #TODO
-        #TODO
       ];
-
 
       #TODO
 

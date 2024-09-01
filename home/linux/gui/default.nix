@@ -10,8 +10,8 @@
   # Import the configurations for the selected theme.
   imports = 
     let
-      themeImports = 
-        if theme == "lawson" then [ ./rofi ./dunst ./swaylock ./waybar ] #./hyprland ]
+      hyprModsImports = 
+        if de == "hyprland" then [ ./rofi ./dunst ./swaylock ./waybar ]
         else [];
     in
       [
@@ -19,6 +19,6 @@
         ./imv.nix
         ./mpv.nix
         ./qutebrowser
-      ] ++ themeImports;
+      ] ++ hyprModsImports;
 
 }

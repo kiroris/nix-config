@@ -11,7 +11,7 @@
   services = {
 
     # GVFS daemon.
-    gvfs.enable = false;
+    gvfs.enable = true;
     
     # FWUPD daemon.
     fwupd.enable = false;
