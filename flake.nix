@@ -180,12 +180,13 @@
 
       
       # Function of creating extra special arguments.
-      genExtraSpecialArgs = system: pkgs: theme:
+      genExtraSpecialArgs = system: pkgs: theme: de:
         let
           baseArgs = genSpecialArgs system pkgs; # Get the basic special arguments.
         in
           baseArgs // {
             theme = theme; # Adding the theme argument to the base arguments.
+            de = de;
         };
 
 
@@ -204,13 +205,13 @@
 
 
       # Home-Manager configuration function.
-      makeHomeConfiguration = theme: system: pkgs: modules:
+      makeHomeConfiguration = de: theme: system: pkgs: modules:
         home-manager.lib.homeManagerConfiguration {
           pkgs = pkgs.legacyPackages."${system}";
           modules = [
             ./home/base/home.nix
           ] ++ modules;
-          extraSpecialArgs = genExtraSpecialArgs system pkgs theme;
+          extraSpecialArgs = genExtraSpecialArgs system pkgs theme de;
         };
 
   in {
@@ -232,7 +233,7 @@
 
     homeConfigurations = {
 
-      "${myvars.username}@wisteria" = makeHomeConfiguration "lawson" "x86_64-linux" inputs.nixpkgs [
+      "${myvars.username}@wisteria" = makeHomeConfiguration "hyprland" "lawson" "x86_64-linux" inputs.nixpkgs [
         ./home/linux/home.nix
         #TODO
         #TODO
