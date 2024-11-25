@@ -201,7 +201,7 @@
     nixosConfigurations = {
 
       wisteria = makeNixosConfiguration "wisteria" "x86_64-linux" inputs.nixpkgs [
-        #./misc/tor.nix
+        ./misc/tor.nix
         ./misc/game.nix
       ];
 

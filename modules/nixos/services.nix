@@ -25,6 +25,8 @@
     # ZerotierOne daemon.
     zerotierone.enable = true;
 
+    logmein-hamachi.enable = true;
+
     # Dbus daemon.
     dbus = {
       enable = true;

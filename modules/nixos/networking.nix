@@ -23,7 +23,7 @@
     firewall.allowedUDPPorts = [ 5353 ];
 
     # I wanna start to play HTB CTF...
-    firewall.enable = true;
+    firewall.enable = false;
 
     # Configure network proxy if necessary.
     # proxy.default = "http://user:password@proxy:port/";

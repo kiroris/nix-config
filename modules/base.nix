@@ -37,6 +37,7 @@
     zstd
     zip
     xz
+    unrar
 
     # System monitoring.
     #sysbench # Example test: "sysbench --test=cpu --cpu-max-prime=20000 --threads=4  run".

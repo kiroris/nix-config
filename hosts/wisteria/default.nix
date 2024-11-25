@@ -15,10 +15,13 @@
   environment.systemPackages = with pkgs; [
     radare2
     iaito
+
   
     qpwgraph
 
     anytype
+
+    nh
 
     chromium
 
@@ -28,6 +31,9 @@
     ##laptop - acpi
 
     foot
+    haguichi
+    logmein-hamachi
+
 
     rpcs3
 
@@ -45,6 +51,7 @@
     ffmpeg_5-full
     libnotify
     transmission
+    transmission_4-qt
     appimage-run
   
   
@@ -87,6 +94,7 @@
     ## Java
     #temurin-jre-bin-20
     jdk22
+    jdk21_headless
     ## Rust
     #rustc
     #cargo
